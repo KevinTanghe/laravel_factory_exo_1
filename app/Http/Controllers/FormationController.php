@@ -14,7 +14,9 @@ class FormationController extends Controller
      */
     public function index()
     {
-        //
+        $formation = Formation::all();
+
+        return view('formation', compact('formation'));
     }
 
     /**

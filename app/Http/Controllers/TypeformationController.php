@@ -14,7 +14,9 @@ class TypeformationController extends Controller
      */
     public function index()
     {
-        //
+        $typeformation = Typeformation::all();
+
+        return view('typeformation', compact('typeformation'));
     }
 
     /**

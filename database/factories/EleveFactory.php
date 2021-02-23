@@ -22,7 +22,10 @@ class EleveFactory extends Factory
     public function definition()
     {
         return [
-            //
+            "firstname" => $this->faker->firstName,
+            "lastname" => $this->faker->lastName,
+            "age" => $this->faker->numberBetween(10, 30),
+            "etat" => $this->faker->boolean
         ];
     }
 }
